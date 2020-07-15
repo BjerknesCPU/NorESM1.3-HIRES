@@ -1,0 +1,22 @@
+<components version="2.0">
+  <comp_archive_spec compname="pop" compclass="ocn">
+    <rest_file_extension>r</rest_file_extension>
+    <rest_file_extension>ro</rest_file_extension>
+    <hist_file_extension>h\.\d*.*\.nc$</hist_file_extension>
+    <rest_history_varname>unset</rest_history_varname>
+    <rpointer>
+      <rpointer_file>rpointer$NINST_STRING.ocn.*</rpointer_file>
+      <rpointer_content >$CASE.pop$NINST_STRING.r.$DATENAME.nc</rpointer_content>
+    </rpointer>
+    <test_file_names>
+      <tfile disposition="move">ocn_0001.log.5548574.chadmin1.180228-124723.gz</tfile>
+      <tfile disposition="copy">casename.pop.r.1976-01-01-00000.nc</tfile>
+      <tfile disposition="copy">casename.pop.ro.1976-01-01-00000.nc</tfile>
+      <tfile disposition="copy">rpointer.drv_0001</tfile>
+      <tfile disposition="copy">rpointer.ocn.tavg</tfile>
+      <tfile disposition="copy">rpointer.ocn.restart</tfile>
+      <tfile disposition="move">casename.pop.h.nday1.1976-01-01-00000.nc</tfile>
+    </test_file_names>
+  </comp_archive_spec>
+
+</components>

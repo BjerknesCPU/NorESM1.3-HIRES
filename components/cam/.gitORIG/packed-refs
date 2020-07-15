@@ -1,0 +1,16 @@
+# pack-refs with: peeled fully-peeled 
+a686e891505ecabbc02e3e7176724c6988d52608 refs/remotes/origin/master
+27667316461f2970d6dead46efe9d4b8f91043e6 refs/tags/ihesp-cam5.3.65.10
+270a9a4fb54b869ba45c1bf7abb32dbff5e0dfa8 refs/tags/ihesp-cam5.3.65.11
+1a0a2da7234068388bebbf05d0e5c260de654d34 refs/tags/ihesp-cam5.3.65.12
+4f7ac559bc4e5887181327241bb389250da35f46 refs/tags/ihesp-cam5.3.65.13
+61d6b22dc7c717fe9f87500e8f68a93c2139d862 refs/tags/ihesp-cam5.3.65.14
+cf6bc4dbeb091eb85f8bbe907997431443909d7c refs/tags/ihesp-cam5.3.65.15
+8903289449ae5f09adf0b90b500870e99a0bc1a8 refs/tags/ihesp-cam5.3.65.16
+3818a79a13b51d3da5a2c49c2520e7a139c04c6e refs/tags/ihesp-cam5.3.65.17
+540d1b09186f8ab1049614af324c0caa8761b4a6 refs/tags/ihesp-cam5.3.65.18
+99bf3bac5b87bd4c0260b07d0c1c6e7c436e2f35 refs/tags/ihesp-cam5.3.65.9
+1534295c8b885573974d9cf40bdece0e2eb1a6b0 refs/tags/ihesp-hires-cam5.3.65.19
+0e6cd35ae131e72bec1077bf3f738ec4f55f3461 refs/tags/ihesp-hires-cam5.3.65.20
+b0f97a63bbabaec673e3bcd936dbc57a762257a5 refs/tags/ihesp-hires-cam5.3.65.21
+a686e891505ecabbc02e3e7176724c6988d52608 refs/tags/ihesp-hires-cam5.3.65.22

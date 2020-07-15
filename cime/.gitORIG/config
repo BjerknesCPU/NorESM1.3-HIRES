@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/ihesp/cime
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "ihesp-regional-master"]
+	remote = origin
+	merge = refs/heads/ihesp-regional-master

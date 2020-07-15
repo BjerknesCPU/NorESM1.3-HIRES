@@ -1,0 +1,9 @@
+# pack-refs with: peeled fully-peeled 
+a8a7e948a305a5e9c8a2531a1bfc17f8fcf871a8 refs/remotes/origin/master
+84fd939a71124f98f0101b0db02ed06c3cbc39f1 refs/remotes/origin/release-1.0
+77ac12ac63b4227a74c8557e9a9778fa6861afd4 refs/tags/blom0_0_000
+^56d027da72494423b447b4010d919f2255fab4f2
+642afaa3229577161f1e3324c7296dab66768418 refs/tags/blom0_0_001
+^4c830419af75721056dfae07d699c6373a347d9a
+aec3b51ecd90e9eae0f8e35511b04fe70c251952 refs/tags/v1.0.0
+^84fd939a71124f98f0101b0db02ed06c3cbc39f1

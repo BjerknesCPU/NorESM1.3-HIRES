@@ -1,0 +1,66 @@
+<?xml version="1.0"?> <namelist_defaults> <!-- dust --> <dust_emis_fact> 1.05D0 </dust_emis_fact> <!-- se_ftype --> <se_ftype> 2 </se_ftype> 
+<!-- Solar constant from Lean (via Caspar Ammann) -->
+<solar_data_file>atm/cam/solar/spectral_irradiance_Lean_1610-2140_ann_c100408.nc</solar_data_file>
+<solar_data_ymd>19500101</solar_data_ymd>
+<solar_data_type>FIXED</solar_data_type>
+
+<!-- 1950 GHG values from ipcc-ar4-cfcs-1950-2000.xls (Doug Kinnison) -->
+<co2vmr>310.75e-6</co2vmr>
+<ch4vmr>1147.25e-9</ch4vmr>
+<n2ovmr>289.0e-9</n2ovmr>
+<f11vmr>57.28e-12</f11vmr>
+<f12vmr>5.0045e-12</f12vmr>
+
+<!-- 1950 ozone data is from Jean-Francois Lamarque -->
+<prescribed_ozone_datapath>atm/cam/ozone</prescribed_ozone_datapath>
+<prescribed_ozone_file>ozone_rcp85_v1_1.9x2.5_L66_1950_c190517.nc</prescribed_ozone_file>
+<prescribed_ozone_name>O3</prescribed_ozone_name>
+<prescribed_ozone_type>CYCLICAL</prescribed_ozone_type>
+<prescribed_ozone_cycle_yr>1950</prescribed_ozone_cycle_yr>
+
+<!-- Surface emissions for MAM -->
+<srf_emis_type>CYCLICAL</srf_emis_type>
+<srf_emis_cycle_yr>1950</srf_emis_cycle_yr>
+<dms_emis_file	   chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/aerocom_mam3_dms_surf_1950_c090804_c191023.nc</dms_emis_file>
+<so2_emis_file	   chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_so2_surf_1950_c190517.nc</so2_emis_file>
+<soag_emis_file	   chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_soag_1.5_surf_1950_c190517.nc</soag_emis_file>
+<bc_a1_emis_file   chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_bc_surf_1950_c190517.nc</bc_a1_emis_file>
+<pom_a1_emis_file  chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_oc_surf_1950_c190517.nc</pom_a1_emis_file>
+<so4_a1_emis_file  chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_so4_a1_surf_1950_c190517.nc</so4_a1_emis_file>
+<so4_a2_emis_file  chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_so4_a2_surf_1950_c190517.nc</so4_a2_emis_file>
+<num_a1_emis_file  chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_num_a1_surf_1950_c190517.nc</num_a1_emis_file>
+<num_a2_emis_file  chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_num_a2_surf_1950_c190517.nc</num_a2_emis_file>
+
+<!-- External forcing for BAM or MAM -->
+<ext_frc_type>CYCLICAL</ext_frc_type>
+<ext_frc_cycle_yr>1950</ext_frc_cycle_yr>
+<so2_ext_file      chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_so2_elev_1950_c190517.nc</so2_ext_file>
+<so4_a1_ext_file   chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_so4_a1_elev_1950_c190517.nc</so4_a1_ext_file>
+<so4_a2_ext_file   chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_so4_a2_elev_1950_c190517.nc</so4_a2_ext_file>
+<num_a1_ext_file   chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_num_a1_elev_1950_c190517.nc</num_a1_ext_file>
+<num_a2_ext_file   chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_num_a2_elev_1950_c190517.nc</num_a2_ext_file>
+<pom_a1_ext_file   chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_oc_elev_1950_c190517.nc</pom_a1_ext_file>
+<bc_a1_ext_file    chem="trop_mam3">atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_bc_elev_1950_c190517.nc</bc_a1_ext_file>
+
+<!-- Prescribed oxidants for aerosol chemistry -->
+<tracer_cnst_type>CYCLICAL</tracer_cnst_type>
+<tracer_cnst_cycle_yr>1950</tracer_cnst_cycle_yr>
+<tracer_cnst_file>oxid_rcp85_v1_1.9x2.5_L26_1950_c190517.nc</tracer_cnst_file>
+
+<!-- sim_year used for CLM datasets and SSTs forcings -->
+<sim_year>1950</sim_year>
+
+
+<!-- zm conv -->
+<zmconv_c0_lnd                             > 0.0059D0  </zmconv_c0_lnd>
+
+<zmconv_c0_ocn                             > 0.0450D0  </zmconv_c0_ocn>
+
+<!-- microphysics -->
+
+<micro_mg_dcs> 600.D-6 </micro_mg_dcs>
+<!-- Cloud fraction -->
+
+<cldfrc_rhminl                             > 0.950D0   </cldfrc_rhminl>
+
+</namelist_defaults>
