@@ -18,6 +18,7 @@ attributes from the config_cache.xml file (with keys converted to upper-case).
 <!-- CO2 volume mixing ratio -->
 <co2_ppmv sim_year="1000">379.0</co2_ppmv>
 <co2_ppmv sim_year="2000">379.0</co2_ppmv>
+<co2_ppmv sim_year="1950">310.75</co2_ppmv>
 <co2_ppmv sim_year="1850">284.7</co2_ppmv>
 
 <!-- CO2 type -->
@@ -156,6 +157,13 @@ irrig=".false." crop="off" lnd_tuning_mode="clm4_0_CRUv7"
 ic_tod="0" sim_year="1850" glc_nec="0" irrig=".false." crop="off" >ccsm4_init/b.e13.B1850C5CN.ne120_g16.tuning.005ax/0102-01-01/b.e13.B1850C5CN.ne120_g16.tuning.005ax.clm2.r.0102-01-01-00000.IP_2_T12.nc
 </finidat>
 
+<finidat hgrid="ne120np4"  maxpft="17"  mask="tnx0.25v4" bgc="cn" 
+ic_tod="0" glc_nec="0" irrig=".false." crop="off" >lnd/clm2/initdata/b.e13.B1850C5CN.ne120_tn0254.0001-01-02-00000.nc
+</finidat>
+
+<finidat hgrid="ne120np4"  maxpft="17"  mask="gx1v6" bgc="cn" 
+ic_tod="0" glc_nec="0" irrig=".false." crop="off" >lnd/clm2/initdata/b.e13.B1850C5CN.ne120_tn0254.0001-01-02-00000.nc
+</finidat>
 
 <!-- Initial files interpolated from native resolution -->
 

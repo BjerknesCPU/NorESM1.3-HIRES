@@ -1,1 +1,1 @@
-finidat = '${DIN_LOC_ROOT}/ccsm4_init/b.e13.B1850C5CN.ne120_g16.tuning.005ax/0102-01-01/b.e13.B1850C5CN.ne120_g16.tuning.005ax.clm2.r.0102-01-01-00000.IP_2_T12.nc
+finidat = '${DIN_LOC_ROOT}/lnd/clm2/initdata/clmi.BCN.2000-01-01_ne120np4_tn0254_simyr2000_c110503_interp200716.nc'

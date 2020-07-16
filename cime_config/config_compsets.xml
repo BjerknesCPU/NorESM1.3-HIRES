@@ -114,12 +114,26 @@
       </values>
     </entry>
 
+    <entry id="CAM_USER_MODS">
+      <values >
+        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">$SRCROOT/cime_config/usermods_dirs/N1950C5</value>
+        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">$SRCROOT/cime_config/usermods_dirs/NTR1950C5</value>
+      </values>
+    </entry>
+
     <entry id="RUN_REFDIR">
       <values match="first">
         <value  compset="1950_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV">ccsm4_init</value>
         <value  compset="1950TR_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV">ccsm4_init</value>
       </values>
-   </entry>
+    </entry>
+
+    <entry id="BUDGETS">
+      <values >
+        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">TRUE</value>
+        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">TRUE</value>
+      </values>
+    </entry>
 
     <entry id="PIO_NETCDF_FORMAT">
       <values match="first">
@@ -132,13 +146,6 @@
       <values match="first">
         <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">CESM1_MOD</value>
         <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">CESM1_MOD</value>
-      </values>
-    </entry>
-
-    <entry id="BUDGETS">
-      <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">FALSE</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">FALSE</value>
       </values>
     </entry>
 
