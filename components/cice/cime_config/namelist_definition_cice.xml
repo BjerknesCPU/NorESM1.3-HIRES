@@ -1538,17 +1538,31 @@
   <!--   </values> -->
   <!-- </entry> -->
 
-  <!-- <entry id="update_ocn_f"> -->
-  <!--   <type>logical</type> -->
-  <!--   <category>forcing</category> -->
-  <!--   <group>forcing_nml</group> -->
-  <!--   <desc> -->
-  <!--     include frazil water/salt fluxes in ocean fluxes -->
-  <!--   </desc> -->
-  <!--   <values> -->
-  <!--     <value>.false.</value> -->
-  <!--   </values> -->
-  <!-- </entry> -->
+
+   <entry id="tfrzpt">
+     <type>char</type>
+     <category>parameterizations</category>
+     <group>ice_nml</group>
+     <desc>
+       freezing point option
+     </desc>
+     <values>
+       <value>constant</value>
+     </values>
+   </entry>
+
+
+   <entry id="update_ocn_f">
+     <type>logical</type>
+     <category>parameterizations</category> 
+     <group>ice_nml</group> 
+     <desc> 
+       include frazil water/salt fluxes in ocean fluxes 
+     </desc> 
+     <values> 
+       <value>.true.</value> 
+     </values> 
+   </entry> 
 
   <!-- <entry id="ustar_min"> -->
   <!--   <type>real</type> -->

@@ -285,6 +285,22 @@ Default: 120
 </entry>
 
 <entry 
+id="tfrzpt" 
+type="char*256"  
+category="parameterizations" 
+group="ice_nml" >
+Default: constant
+</entry>
+
+<entry 
+id="update_ocn_f" 
+type="logical"  
+category="parameterizations" 
+group="ice_nml" >
+Default: false
+</entry>
+
+<entry 
 id="evp_damping" 
 type="logical"  
 category="parameterizations" 

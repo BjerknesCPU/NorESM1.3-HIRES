@@ -16,7 +16,7 @@
     ATM  = [CAM40, CAM50, CAM60]
     LND  = [CLM45, CLM50, SLND]
     ICE  = [CICE, DICE, SICE]
-    OCN  = [DOCN, ,AQUAP, SOCN]
+    OCN  = [DOCN, POP, BLOM ,AQUAP, SOCN]
     ROF  = [RTM, MOSART, SROF]
     GLC  = [CISM1, CISM2, SGLC]
     WAV  = [WW3, DWAV, XWAV, SWAV]
@@ -36,21 +36,6 @@
     - grid  (optional regular expression match for grid to work with the compset)
   </help>
 
-  <!-- 1850 compsets Default, Mosart, Wave for CESM2 -->
-
-  <compset>
-    <alias>B1850C5</alias>
-    <lname>1850_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV</lname>
-  </compset>
-
-  <compset>
-    <alias>B1950C5</alias>
-    <lname>1950_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV</lname>
-    <science_support grid="ne120_t12"/>
-    <science_support grid="f09_g16"/>
-    <science_support grid="ne30_g16"/>
-  </compset>
-
   <compset>
     <alias>N1950C5</alias>
     <lname>1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV</lname>
@@ -63,32 +48,13 @@
     <science_support grid="ne120_tn0254"/>
   </compset>
 
-  <compset>
-    <alias>B1950TRC5</alias>
-    <lname>1950TR_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV</lname>
-    <science_support grid="ne120_t12"/>
-    <science_support grid="f09_g16"/>
-    <science_support grid="ne30_g16"/>
-  </compset>
-
-  <compset>
-    <alias>BHISTC5</alias>
-    <lname>HIST_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV</lname>
-  </compset>
-
   <entries>
     <entry id="RUN_STARTDATE">
-<values>
-<value compset="1850_"     >0001-01-01</value>
-<value compset="1950_"     >0001-01-01</value>
-<value compset="1950TR_"   >1950-01-01</value>
-<value compset="2000_"     >0001-01-01</value>
-<value compset="HIST_"     >1850-01-01</value>
-<value compset="5505_"     >1955-01-01</value>
-<value compset="RCP[2468]_">2005-01-01</value>
-<value compset="2013_"     >2013-01-01</value>
-</values>
-</entry>
+    <values>
+      <value compset="1950_"     >0001-01-01</value>
+      <value compset="1950TR_"   >1950-01-01</value>
+    </values>
+  </entry>
 
     <entry id="RUN_REFDATE">
 	<values match="first">
@@ -100,10 +66,8 @@
 
     <entry id="RUN_TYPE">
       <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV">startup</value>
         <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">startup</value>
-        <value  compset="1950_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV">hybrid</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV">hybrid</value>
+        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">hybrid</value>
       </values>
     </entry>
 
@@ -123,15 +87,15 @@
 
     <entry id="RUN_REFDIR">
       <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV">ccsm4_init</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV">ccsm4_init</value>
+        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">ccsm4_init</value>
+        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">ccsm4_init</value>
       </values>
     </entry>
 
     <entry id="BUDGETS">
       <values >
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">TRUE</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">TRUE</value>
+        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">FALSE</value>
+        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">FALSE</value>
       </values>
     </entry>
 

@@ -1,5 +1,1 @@
- mfilt          = 1,75
- nhtfrq         = 0,-24
- fincl1         = 'SST', 'Z700', 'Z500', 'Z300', 'Z050', 'U200', 'U850', 'V200', 'V850', 'OMEGA500', 'OMEGA850', 'ICEFRAC'
- fincl2         = 'CLDTOT','SST','ICEFRAC','QREFHT','TREFHTMN','TREFHTMX','TREFHT','PRECT','PSL','QFLX','Z500','U850','V850','U200','V200'
-cldfrc_rhminl          =  0.950D0
+cldfrc_rhminl          =  0.910D0
