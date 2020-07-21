@@ -2,7 +2,14 @@
   <comp_archive_spec compname="blom" compclass="ocn">
     <rest_file_extension>r</rest_file_extension>
     <rest_file_extension>rbgc</rest_file_extension>
-    <hist_file_extension>h\..*\.nc$</hist_file_extension>
+    <hist_file_extension>h\d*.*\.nc$</hist_file_extension>
+    <hist_file_extension>h.*\.nc$</hist_file_extension>
+    <hist_file_extension>hd.*\.nc$</hist_file_extension>
+    <hist_file_extension>hm.*\.nc$</hist_file_extension>
+    <hist_file_extension>hy.*\.nc$</hist_file_extension>
+    <hist_file_extension>hbgcd.*\.nc$</hist_file_extension>
+    <hist_file_extension>hbgcm.*\.nc$</hist_file_extension>
+    <hist_file_extension>hbgcy.*\.nc$</hist_file_extension>
     <rest_history_varname>unset</rest_history_varname>
     <rpointer>
       <rpointer_file>rpointer$NINST_STRING.ocn.*</rpointer_file>

@@ -57,38 +57,36 @@
   </entry>
 
     <entry id="RUN_REFDATE">
-	<values match="first">
-<value grid="a%ne120np4_l%ne120np4_oi%tx0.1v2_r%r05_g%gland4_w%ww3a_m%tx0.1v2"      compset="1950_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV">0021-01-01</value>
-<value grid="a%ne120np4_l%ne120np4_oi%tx0.1v2_r%r05_g%gland4_w%ww3a_m%tx0.1v2"      compset="1950TR_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV">0055-01-01</value>
+      <values>
+         <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">0003-01-01</value>
       </values>
     </entry>
 
 
     <entry id="RUN_TYPE">
-      <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">startup</value>
+      <values>
+        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">hybrid</value>
         <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">hybrid</value>
       </values>
     </entry>
 
     <entry id="RUN_REFCASE">
-      <values match="first">
-        <value grid="a%ne120np4_l%ne120np4_oi%tx0.1v2_r%r05_g%gland4_w%ww3a_m%tx0.1v2" compset="1950_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV">B.E.13.B1850C5.ne120_t12.sehires38.003</value>
-        <value grid="a%ne120np4_l%ne120np4_oi%tx0.1v2_r%r05_g%gland4_w%ww3a_m%tx0.1v2" compset="1950TR_CAM50_CLM40%SP_CICE_POP2_RTM_SGLC_SWAV">B.E.13.B1950C5.ne120_t12.cesm-ihesp-1950cntl.009</value>
+      <values>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">N1950C5_ne120_tn0254_test_12</value>
       </values>
     </entry>
 
     <entry id="CAM_USER_MODS">
       <values >
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">$SRCROOT/cime_config/usermods_dirs/N1950C5</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">$SRCROOT/cime_config/usermods_dirs/NTR1950C5</value>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">$SRCROOT/cime_config/usermods_dirs/N1950C5</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">$SRCROOT/cime_config/usermods_dirs/NTR1950C5</value>
       </values>
     </entry>
 
     <entry id="RUN_REFDIR">
-      <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">ccsm4_init</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">ccsm4_init</value>
+      <values>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">ccsm4_init</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">ccsm4_init</value>
       </values>
     </entry>
 
@@ -142,8 +140,8 @@
 
     <entry id="STOP_N">
       <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">1</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">1</value>
+        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">5</value>
+        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">5</value>
       </values>
     </entry>
 

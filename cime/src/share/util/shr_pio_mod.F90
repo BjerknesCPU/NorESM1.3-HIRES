@@ -709,7 +709,12 @@ contains
 
     endif
 
-
+       if( iamroot) then
+          write(shr_log_unit,*) 'npes = ',npes
+          write(shr_log_unit,*) 'pio_numiotasks = ',pio_numiotasks
+          write(shr_log_unit,*) 'pio_root = ',pio_root
+          write(shr_log_unit,*) 'pio_stride = ',pio_stride
+       end if
     if (pio_root + (pio_stride)*(pio_numiotasks-1) >= npes .or. &
          pio_stride<=0 .or. pio_numiotasks<=0 .or. pio_root < 0 .or. &
          pio_root > npes-1) then

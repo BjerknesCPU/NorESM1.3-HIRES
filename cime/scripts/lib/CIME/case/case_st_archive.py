@@ -376,8 +376,10 @@ def _archive_restarts_date_comp(case, casename, rundir, archive, archive_entry,
         last_restart_file_fn = symlink_force
         last_restart_file_fn_msg = "linking"
     else:
-        last_restart_file_fn = safe_copy
-        last_restart_file_fn_msg = "copying"
+        #last_restart_file_fn = safe_copy
+        #last_restart_file_fn_msg = "copying"
+        last_restart_file_fn = hardlink_force
+        last_restart_file_fn_msg = "hard-linking"
 
     # the compname is drv but the files are named cpl
     if compname == 'drv':

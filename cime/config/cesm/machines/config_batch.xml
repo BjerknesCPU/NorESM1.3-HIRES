@@ -83,7 +83,7 @@
       <directive> --export=ALL</directive>
     </directives>
     <queues>
-      <queue walltimemax="06:00:00" nodemin="8" nodemax="288" default="true">normal</queue>
+      <queue walltimemax="48:00:00" nodemin="8" nodemax="288" default="true">normal</queue>
     </queues>
   </batch_system>
 
@@ -648,7 +648,7 @@
     <job name="case.st_archive">
       <template>template.st_archive</template>
       <task_count>1</task_count>
-      <walltime>0:20:00</walltime>
+      <walltime>1:00:00</walltime>
       <!-- If DOUT_S is true and case.run (or case.test) exits successfully then run st_archive-->
       <dependency>case.run or case.test</dependency>
       <prereq>$DOUT_S</prereq>

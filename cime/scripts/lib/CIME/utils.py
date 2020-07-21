@@ -881,6 +881,21 @@ def symlink_force(target, link_name):
         else:
             raise e
 
+def hardlink_force(target, link_name):
+    """
+    Makes a hard link from link_name to target. Unlike the standard
+    os.link, this will work even if link_name already exists (in
+    which case link_name will be overwritten).
+    """
+    try:
+        os.link(target, link_name)
+    except OSError as e:
+        if e.errno == errno.EEXIST:
+            os.remove(link_name)
+            os.link(target, link_name)
+        else:
+            raise e
+
 def find_proc_id(proc_name=None,
                  children_only=False,
                  of_parent=None):

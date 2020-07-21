@@ -1,1 +1,1 @@
-finidat = '${DIN_LOC_ROOT}/lnd/clm2/initdata/clmi.BCN.2000-01-01_ne120np4_tn0254_simyr2000_c110503_interp200716.nc'
+finidat = '/cluster/projects/nn9039k/inputdata/lnd/clm2/initdata/clmi.BCN.2000-01-01_ne120np4_tn0254_simyr2000_c110503_interp200716.nc'

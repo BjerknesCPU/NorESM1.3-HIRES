@@ -4,7 +4,6 @@
 ! Note - that it does not matter what namelist group the namelist_var belongs to
 !----------------------------------------------------------------------------------
 update_ocn_f=.true.
-xndt_dyn = 2.0
 r_ice = 2.0
 r_pnd = 2.0
 r_snw = 2.0 

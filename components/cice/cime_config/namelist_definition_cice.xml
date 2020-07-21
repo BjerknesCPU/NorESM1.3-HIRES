@@ -1547,7 +1547,7 @@
        freezing point option
      </desc>
      <values>
-       <value>constant</value>
+       <value>linear_S</value>
      </values>
    </entry>
 
