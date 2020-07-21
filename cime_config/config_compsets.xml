@@ -57,22 +57,22 @@
   </entry>
 
     <entry id="RUN_REFDATE">
-      <values>
-         <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">0003-01-01</value>
+      <values match="first">
+         <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">0001-01-01</value>
       </values>
     </entry>
 
 
     <entry id="RUN_TYPE">
-      <values>
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">hybrid</value>
+      <values match="first">
+        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">startup</value>
         <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">hybrid</value>
       </values>
     </entry>
 
     <entry id="RUN_REFCASE">
-      <values>
-        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">N1950C5_ne120_tn0254_test_12</value>
+      <values match="first">
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">UNSET</value>
       </values>
     </entry>
 
