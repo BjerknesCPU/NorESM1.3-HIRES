@@ -7,7 +7,7 @@ are members of class Case from file case.py
 import shutil, glob, re, os
 
 from CIME.XML.standard_module_setup import *
-from CIME.utils                     import run_and_log_case_status, ls_sorted_by_mtime, symlink_force, safe_copy, find_files
+from CIME.utils                     import run_and_log_case_status, ls_sorted_by_mtime, symlink_force, hardlink_force, safe_copy, find_files
 from CIME.date                      import get_file_date
 from CIME.XML.archive       import Archive
 from CIME.XML.files            import Files
