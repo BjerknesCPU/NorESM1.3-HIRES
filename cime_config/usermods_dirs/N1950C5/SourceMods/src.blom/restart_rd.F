@@ -54,7 +54,8 @@ c
       data first /.true./
       save first,iuu,ivv,iqq
 c
-      character(CS) :: freeze_option='linear_salt'
+c     character(CS) :: freeze_option='linear_salt'
+      character(CS) :: freeze_option='minus1p8'
 c
 #if defined(TRC) && (defined(TKE) || defined(IDLAGE))
 #  include "param_trc.h"

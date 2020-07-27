@@ -51,28 +51,35 @@
   <entries>
     <entry id="RUN_STARTDATE">
     <values>
-      <value compset="1950_"     >0001-01-01</value>
+      <value compset="1950_"     >0011-01-01</value>
       <value compset="1950TR_"   >1950-01-01</value>
     </values>
   </entry>
 
     <entry id="RUN_REFDATE">
       <values match="first">
-         <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">0001-01-01</value>
+         <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">0011-01-01</value>
       </values>
     </entry>
 
 
     <entry id="RUN_TYPE">
       <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">startup</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">hybrid</value>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">hybrid</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">hybrid</value>
       </values>
     </entry>
 
     <entry id="RUN_REFCASE">
       <values match="first">
-        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">UNSET</value>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">N1950C5_ne120_tn0254_test_15</value>
+      </values>
+    </entry>
+
+    <entry id="GET_REFCASE">
+      <values match="first">
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">TRUE</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">TRUE</value>
       </values>
     </entry>
 
@@ -92,8 +99,8 @@
 
     <entry id="BUDGETS">
       <values >
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">FALSE</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">FALSE</value>
+        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">TRUE</value>
+        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">TRUE</value>
       </values>
     </entry>
 
@@ -122,6 +129,13 @@
       <values match="first">
         <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">ne120np4</value>
         <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">ne120np4</value>
+      </values>
+    </entry>
+
+    <entry id="TFREEZE_SALTWATER_OPTION">
+      <values>
+        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">minus1p8</value>
+        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">minus1p8</value>
       </values>
     </entry>
 

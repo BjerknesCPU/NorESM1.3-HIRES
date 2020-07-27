@@ -35,7 +35,8 @@ c
 #include "common_seaice.h"
 c
       real, dimension(1-nbdy:idm+nbdy,1-nbdy:jdm+nbdy) :: tfrz
-      character(CS) :: freeze_option='linear_salt'
+c     character(CS) :: freeze_option='linear_salt'
+      character(CS) :: freeze_option='minus1p8'
 c
       integer i,j,k,l
       real q,dps

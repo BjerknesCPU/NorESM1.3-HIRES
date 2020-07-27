@@ -1,3 +1,2 @@
-cldfrc_rhminl          =  0.910D0
-cldfrc_rhminh          =  0.900D0
+cldfrc_rhminl          =  0.925D0
 ncdata = '/cluster/projects/nn9039k/inputdata/atm/cam/inic/homme/cami-mam3_0000-01-ne120np4_L30_c110928.nc'
