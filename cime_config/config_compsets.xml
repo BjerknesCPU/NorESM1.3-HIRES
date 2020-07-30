@@ -99,70 +99,78 @@
 
     <entry id="BUDGETS">
       <values >
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">TRUE</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">TRUE</value>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">TRUE</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">TRUE</value>
       </values>
     </entry>
 
     <entry id="PIO_NETCDF_FORMAT">
       <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">64bit_offset</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">64bit_offset</value>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">64bit_offset</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">64bit_offset</value>
       </values>
     </entry>    
 
     <entry id="CPL_SEQ_OPTION">
       <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">CESM1_MOD</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">CESM1_MOD</value>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">CESM1_MOD</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">CESM1_MOD</value>
       </values>
     </entry>
 
     <entry id="OCN_NCPL">
       <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">48</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">48</value>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">48</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">48</value>
       </values>
     </entry>
 
     <entry id="GLC_GRID">
       <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">ne120np4</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">ne120np4</value>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">ne120np4</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">ne120np4</value>
       </values>
     </entry>
 
     <entry id="TFREEZE_SALTWATER_OPTION">
       <values>
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">minus1p8</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">minus1p8</value>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">minus1p8</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">minus1p8</value>
       </values>
     </entry>
 
     <entry id="CCSM_CO2_PPMV">
       <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">310.75</value>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">310.75</value>
       </values>
     </entry>
 
     <entry id="STOP_OPTION">
       <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">nyears</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">nyears</value>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">nyears</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">nyears</value>
       </values>
     </entry>
 
     <entry id="STOP_N">
       <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">5</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">5</value>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">5</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">5</value>
       </values>
     </entry>
 
     <entry id="RESUBMIT">
       <values match="first">
-        <value  compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">19</value>
-        <value  compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">19</value>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">19</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">19</value>
+      </values>
+    </entry>
+
+    <entry id="COMPRESS_ARCHIVE_FILES">
+      <values match="first">
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">TRUE</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">TRUE</value>
+        <value>FALSE</value>
       </values>
     </entry>
 

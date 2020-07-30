@@ -129,7 +129,7 @@ This allows using a different mpirun command to launch unit tests
       <executable></executable>
     </mpirun>
     <mpirun mpilib="default">
-      <executable>mpirun</executable>
+      <executable>mpirun -bind-to core</executable>
     </mpirun>
     <module_system type="module">
       <init_path lang="perl">/cluster/installations/lmod/lmod/init/perl</init_path>
@@ -143,6 +143,7 @@ This allows using a different mpirun command to launch unit tests
       <modules>
         <command name="load">StdEnv</command>
         <command name="load">iomkl/2020a</command>
+        <command name="load">netCDF/4.7.4-iompi-2020a</command>
         <command name="load">netCDF-Fortran/4.5.2-iompi-2020a</command>
         <command name="load">PnetCDF/1.12.1-iompi-2020a</command>
         <command name="load">CMake/3.12.1</command>
@@ -150,6 +151,7 @@ This allows using a different mpirun command to launch unit tests
     </module_system>
     <environment_variables>
       <env name="OMP_STACKSIZE">64M</env>
+      <env name="MKL_DEBUG_CPU_TYPE">5</env>
     </environment_variables>
     <resource_limits>
       <resource name="RLIMIT_STACK">-1</resource>

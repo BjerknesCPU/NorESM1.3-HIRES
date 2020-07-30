@@ -252,8 +252,10 @@ def _archive_history_files(archive, archive_entry,
                            "history file {} does not exist ".format(srcfile))
                     destfile = join(archive_histdir, histfile)
                     if histfile in histfiles_savein_rundir:
-                        logger.info("copying {} to {} ".format(srcfile, destfile))
-                        safe_copy(srcfile, destfile)
+                        #logger.info("copying {} to {} ".format(srcfile, destfile))
+                        #safe_copy(srcfile, destfile)
+                        logger.info("hard-linking {} to {} ".format(srcfile, destfile))
+                        hardlink_force(srcfile, destfile)
                     else:
                         logger.info("moving {} to {} ".format(srcfile, destfile))
                         archive_file_fn(srcfile, destfile)
@@ -435,9 +437,12 @@ def _archive_restarts_date_comp(case, casename, rundir, archive, archive_entry,
                     destfile = os.path.join(archive_restdir, histfile)
                     expect(os.path.isfile(srcfile),
                            "history restart file {} for last date does not exist ".format(srcfile))
-                    logger.info("Copying {} to {}".format(srcfile, destfile))
-                    safe_copy(srcfile, destfile)
-                    logger.debug("datename_is_last + histfiles_for_restart copying \n  {} to \n  {}".format(srcfile, destfile))
+                    #logger.info("Copying {} to {}".format(srcfile, destfile))
+                    #safe_copy(srcfile, destfile)
+                    #logger.debug("datename_is_last + histfiles_for_restart copying \n  {} to \n  {}".format(srcfile, destfile))
+                    logger.info("Hard-linking {} to {}".format(srcfile, destfile))
+                    hardlink_force(srcfile, destfile)
+                    logger.debug("datename_is_last + histfiles_for_restart hard-linking \n  {} to \n  {}".format(srcfile, destfile))
             else:
                 # Only archive intermediate restarts if requested - otherwise remove them
                 if case.get_value('DOUT_S_SAVE_INTERIM_RESTART_FILES'):
@@ -455,8 +460,10 @@ def _archive_restarts_date_comp(case, casename, rundir, archive, archive_entry,
                         destfile = os.path.join(archive_restdir, histfile)
                         expect(os.path.isfile(srcfile),
                                "hist file {} does not exist ".format(srcfile))
-                        logger.info("copying {} to {}".format(srcfile, destfile))
-                        safe_copy(srcfile, destfile)
+                        #logger.info("copying {} to {}".format(srcfile, destfile))
+                        #safe_copy(srcfile, destfile)
+                        logger.info("hard-linking {} to {} ".format(srcfile, destfile))
+                        hardlink_force(srcfile, destfile)
                 else:
                     srcfile = os.path.join(rundir, restfile)
                     logger.info("removing interim restart file {}".format(srcfile))
@@ -645,6 +652,15 @@ def case_st_archive(self, last_date_str=None, archive_incomplete_logs=True, copy
                         .format(sshhost, case=caseroot), verbose=True)
         else:
             self.submit(resubmit=True)
+
+    #if self.get_value('COMPRESS_ARCHIVE_FILES'):
+    if True:
+        archiveroot = self.get_value('DOUT_S_ROOT')
+        convert='/noresm2netcdf4.sh'
+        cmd_convert=caseroot+convert
+        cmd="%s %s" %(cmd_convert,archiveroot)
+        logger.info("cmd={}".format(cmd))
+        run_cmd_no_fail(cmd)
 
     return True
 

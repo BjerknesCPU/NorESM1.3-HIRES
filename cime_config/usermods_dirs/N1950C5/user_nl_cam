@@ -1,2 +1,6 @@
-cldfrc_rhminl          =  0.925D0
 ncdata = '/cluster/projects/nn9039k/inputdata/atm/cam/inic/homme/cami-mam3_0000-01-ne120np4_L30_c110928.nc'
+fexcl1         = 'CMFDQ', 'CMFDQR', 'CMFDT', 'CONCLD', 'DCQ', 'DTCOND', 'DTV', 'DUV', 'DVV', 'FICE', 'GCLDLWP', 'ICIMR', 'ICLDIWP', 'ICLDTWP', 'ICWMR', 'QC', 'QRL', 'QRS', 'TOT_CLD_VISTAU', 'TOT_ICLD_VISTAU', 'UTGWORO', 'VD01', 'VTGWORO', 'AEROD_v', 'ATMEINT', 'FREQSH', 'FREQZM', 'LANDFRAC', 'OCNFRAC', 'PRECCDZM'
+fincl1         = 'CLDLIQ','CLDICE','TS','OCNFRAC','SST', 'Z700', 'Z500', 'Z300', 'Z050', 'U200', 'U850', 'V200', 'V850', 'OMEGA500', 'OMEGA850', 'ICEFRAC'
+fincl2         = 'T','U','V','Q','OMEGA','Z3','QREFHT','QFLX','TS','PSL','SHFLX','LHFLX','FLDS', 'FLNS', 'FSDS', 'FSNS', 'SOLIN','FLNT','FLUT','FSNT', 'TREFHT','TREFHTMN','TREFHTMX','U10','TAUX','TAUY', 'CLDTOT','CLDHGH','CLDMED','CLDLOW','TGCLDIWP','TGCLDLWP','TGCLDCWP','TMQ','SNOWHICE','SNOWHLND', 'PRECC','PRECL','PRECSC','PRECSL','PRECT','PS','SST','SST', 'Z700', 'Z500', 'Z300', 'Z050', 'U200', 'U850', 'V200', 'V850', 'OMEGA500', 'OMEGA850', 'ICEFRAC'
+mfilt          = 1,1
+nhtfrq         = 0,-24
