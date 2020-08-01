@@ -1,0 +1,13 @@
+!----------------------------------------------------------------------------------
+! Users should add all user specific namelist changes below in the form of 
+!   namelist_var = new_namelist_value 
+! Note - that it does not matter what namelist group the namelist_var belongs to
+!----------------------------------------------------------------------------------
+update_ocn_f=.true.
+Tfrzpt='constant'
+xndt_dyn = 2.0
+r_ice = 2.0
+r_pnd = 2.0
+r_snw = 1.9
+rsnw_melt_in = 10.0 
+dT_mlt_in = 0.1

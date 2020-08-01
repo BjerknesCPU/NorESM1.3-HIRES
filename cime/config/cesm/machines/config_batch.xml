@@ -647,8 +647,8 @@
     </job>
     <job name="case.st_archive">
       <template>template.st_archive</template>
-      <task_count>1</task_count>
-      <walltime>1:00:00</walltime>
+      <task_count>128</task_count>
+      <walltime>48:00:00</walltime>
       <!-- If DOUT_S is true and case.run (or case.test) exits successfully then run st_archive-->
       <dependency>case.run or case.test</dependency>
       <prereq>$DOUT_S</prereq>
