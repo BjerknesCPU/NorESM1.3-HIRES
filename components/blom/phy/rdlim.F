@@ -28,17 +28,19 @@ c
       use mod_dia
       use mod_ben02, only: atm_path, atm_path_len
       use data_mct, only: runid_mct, ocn_cpl_dt_mct
+      use mod_instance, only: inst_suffix
 c
       implicit none
 c
 #include "common_blocks.h"
 #include "common_clndr.h"
 #include "common_forc.h"
+#include "common_cesm.h"
 c
       integer :: m,n,nd0rst,nm0rst,ny0rst
       character*256 :: runtyp,rstfnm
       logical :: fexist
-      integer :: idate,idate0,nstep_in_cpl
+      integer :: idate,idate0
       namelist /limits/ nday1,nday2,idate,idate0,runid,expcnf,runtyp,
      .  grfile,icfile,baclin,batrop,mdv2hi,mdv2lo,mdv4hi,mdv4lo,mdc2hi,
      .  mdc2lo,vsc2hi,vsc2lo,vsc4hi,vsc4lo,cbar,cb,cwbdts,cwbdls,mommth,
@@ -53,9 +55,9 @@ c --- read namelists
       if (mnproc.eq.1) then
 c
         GLB_AVEPERIO=-999
-        inquire(file='ocn_in',exist=fexist)
+        inquire(file='ocn_in'//trim(inst_suffix) ,exist=fexist)
         if (fexist) then
-          open (unit=nfu,file='ocn_in',status='old',action='read',
+          open (unit=nfu,file='ocn_in'//trim(inst_suffix) ,status='old',action='read',
      .          recl=80)
         else
           inquire(file='limits',exist=fexist)
@@ -640,7 +642,7 @@ c --- - interval
         if (mod(ocn_cpl_dt_mct+epsil,baclin).gt.2.*epsil) then
           if (mnproc.eq.1) then
             write (lp,*) 'rdlim: must have an integer number of '//
-     .                   'baroclinic time steps pr. coupling'
+     .                   'baroclinic time steps in a coupling'
             write (lp,*) '       interval!'
           endif
           call xcstop('(rdlim)')
@@ -651,7 +653,7 @@ c --- - get time step and correct model date after first coupling
 c --- - interval
         nstep_in_cpl=nint(ocn_cpl_dt_mct/baclin)
         if (mnproc.eq.1) then
-          write (lp,*) 'rdlim: number of baroclinic time steps per '//
+          write (lp,*) 'rdlim: number of baroclinic time steps in a '//
      .                 'coupling interval:',nstep_in_cpl
         endif
         nstep0=0
@@ -678,7 +680,8 @@ c --- --- 'rpointer.ocn' file containing the path to a valid restart
 c --- --- file is expected and integration time is retrieved from
 c --- --- restart file
 c
-          if (mnproc.eq.1) inquire(file='rpointer.ocn',exist=fexist)
+          if (mnproc.eq.1) 
+     .      inquire(file='rpointer.ocn'//trim(inst_suffix),exist=fexist)
           call xcbcst(fexist)
           if (.not.fexist) then
             if (mnproc.eq.1) then
@@ -688,7 +691,7 @@ c
                    stop '(rdlim)'
           endif
           if (mnproc.eq.1) then
-            open (unit=nfu,file='rpointer.ocn')
+            open (unit=nfu,file='rpointer.ocn'//trim(inst_suffix))
             read (nfu,'(a)') rstfnm
             close (unit=nfu)
             inquire(file=rstfnm,exist=fexist)

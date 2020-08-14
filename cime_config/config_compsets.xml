@@ -51,15 +51,15 @@
   <entries>
     <entry id="RUN_STARTDATE">
     <values>
-      <value compset="1950_"     >0036-01-01</value>
+      <value compset="1950_"     >0061-01-01</value>
       <value compset="1950TR_"   >1950-01-01</value>
     </values>
   </entry>
 
     <entry id="RUN_REFDATE">
       <values match="first">
-         <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">0036-01-01</value>
-         <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">0036-01-01</value>
+         <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">0061-01-01</value>
+         <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">0061-01-01</value>
       </values>
     </entry>
 
@@ -73,8 +73,8 @@
 
     <entry id="RUN_REFCASE">
       <values match="first">
-        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">N1950C5_ne120_tn0254_default_1</value>
-        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">N1950C5_ne120_tn0254_default_1</value>
+        <value compset="1950_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">N1950C5_ne120_tn0254_default_2</value>
+        <value compset="1950TR_CAM50_CLM40%SP_CICE_BLOM%ECO_RTM_SGLC_SWAV">N1950C5_ne120_tn0254_default_2</value>
       </values>
     </entry>
 
